@@ -123,53 +123,9 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">Contact Info</h5>
-              <p class="site-footer-widget-description">
-              {% for contactInfo in footer.contactsInfo %}
-                <a href="{{contactInfo.link}}">{{contactInfo.text}}</a>
-                <br>
-              {% endfor %}
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">{{footer.siteMapHeading}}</h5>
-              <ul class="site-footer-widget-links">
-                {% for siteMap in footer.siteMap %}
-                 <li>
-                  <a href="/{{siteMap.link}}">{{siteMap.text}}</a>
-                 </li> 
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">{{footer.socialHeading}}</h5>
-              <ul class="site-footer-widget-links">
-                {% for socialMedia in footer.socialMedia %}
-                <li><a href="/{{socialMedia.link}}">{{socialMedia.text}}</a></li>
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="site-footer-widget">
-              <h5 class="site-footer-widget-title">{{footer.brandHeading}}</h5>
-              <p class="site-footer-widget-description">
-              {% for brandMotto in footer.brandMotto %}
-                - {{brandMotto}}
-                <br>
-              {% endfor %}
-              </p>
-            </div>
-          </div>
+       
           <div class="col-lg-2 col-12">
-            <a href="#top" class="site-footer-widget-top">
-              <img src="{{footer.back2topIcon}}" alt="back-to-top">
+            <a href="#top" class="site-footer-widget-top">返回顶部
               <p>
                 {{footer.customerComment}}
               </p>
